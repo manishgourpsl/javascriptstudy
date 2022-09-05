@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Selectors Demo</title>
+</head>
+<body>
+    <div></div>
+    <div class="words"></div>
+    <div id="divId"></div>
+    <div>
+        <p></p>
+    </div>
+
+    <div class="divWithClass">
+
+    </div>
+
+    <div class="error">
+
+    </div>
+    <div class="warning">
+
+    </div>
+    <script>
+
+        //Example of element selection using tag name
+         let contentDiv = document.querySelector('div')
+         contentDiv.textContent = 'This is content update from element selector'
+
+         //example of element selection using class name
+         let wordsDiv = document.querySelector('.words');
+         wordsDiv.textContent = 'This is words div'
+
+         //example of element selection using id
+         let divIdTest = document.querySelector('#divId')
+         divIdTest.textContent = 'This is Div Id Test'
+
+         //example of elements selection using queryselector all
+
+         let divCollection = document.querySelectorAll('div');
+         let divContents = Array.from(divCollection)
+                        .map(elem=> elem.textContent)
+                        .join('\n')
+
+        console.log(divContents);
+        
+        //example for paragraph tag inside a div
+        let pInsideDiv = document.querySelector('div > p')
+        pInsideDiv.textContent = 'This is paragraph inside div'
+          
+        //example of selecting element (div) with a class
+        let divWithClass = document.querySelector('div.divWithClass');
+        divWithClass.textContent  = 'This is div with a class'
+
+        let divWithMultipleClassArray = Array.from(document.querySelectorAll('div.error,div.warning'));
+        divWithMultipleClassArray.forEach(elem => elem.textContent = 'This is div With Multiple Class');
+        
+
+    </script>
+</body>
+</html>
