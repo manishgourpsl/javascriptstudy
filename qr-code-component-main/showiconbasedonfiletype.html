@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            a[href$=".pdf"]::before {
+                background-image: url(https://web-dev.imgix.net/image/VbAJIREinuYvovrBzzvEyZOpw5w1/fc7bLiJYf5US6QxTOKsF.png);
+              }
+              
+              a[href$=".jpg"]::before,
+              a[href$=".png"]::before {
+                background-image: url(https://web-dev.imgix.net/image/VbAJIREinuYvovrBzzvEyZOpw5w1/N79qCc0c06217YT4ofYM.png);
+              }
+              
+              
+              a::before {
+                content: "";
+                display: inline-block;
+                vertical-align: middle;
+                width: 1.2em;
+                height: 1.2em;
+                background-size: 100%;
+                margin-inline-end: 0.5em;
+                opacity: 0.8;
+              }
+        </style>
+        <script>
+            //source : https://web.dev/learn/css/selectors/
+            //here we are using regex matching of css (ends with specific extension to insert image before the file name)
+        </script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div>
+            <h2>Downloads</h2>
+      <ul>
+        <li>
+          <a href="my-image.jpg">An example image</a>
+        </li>
+        <li>
+          <a href="my-document.pdf">An example document</a>
+        </li>
+        <li>
+          <a href="my-document.pdf">Another example document</a>
+        </li>
+      </ul>
+        </div>
+         
+        <script src="" async defer></script>
+    </body>
+</html>

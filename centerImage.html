@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            // This has examples on how to center an image using different techniques
+            // source : https://www.freecodecamp.org/news/html-center-image-css-align-img-center-example/
+            
+        </script>
+        <style>
+            .centerdiv{
+                text-align: center;  /* 1st method */
+            }
+            .flexdiv {
+                display:flex;
+                justify-content: center; /* 2nd method using flex*/
+            }
+            .griddiv{
+                display: grid;
+                place-items: center; /* 3rd method using grid */
+            }
+
+            .blockdiv {
+                display: block;
+                margin:  auto; /* 4th method, making element as block element */
+                width: 50%;
+            }
+
+            .img4{
+                box-shadow:  5px 5px 10px black; /* box shadow */
+                margin:10px 10px 10px 10px;
+            }
+            .img5{
+               filter: drop-shadow(5px 5px 10px black);
+                margin:10px 10px 10px 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="centerdiv">
+            <img src="15work_Anniversary.png">
+        </div>
+        <div class="flexdiv">
+            <img src="15work_Anniversary.png">
+        </div>
+        <div class="griddiv">
+            <img src="15work_Anniversary.png">
+        </div>
+         
+            <img src="15work_Anniversary.png" class="blockdiv">
+            <img src="15work_Anniversary.png" class="img4">
+            <img src="15work_Anniversary.png" class="img5">
+        
+    </body>
+</html>

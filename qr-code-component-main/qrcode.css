@@ -1,0 +1,11 @@
+.qrcode-img{
+    border: 1px solid;
+    border-radius: 10px;
+   
+}
+
+.container{
+    width:300px;
+    display: block;
+    margin:  auto; 
+}
